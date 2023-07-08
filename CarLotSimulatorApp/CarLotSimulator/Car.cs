@@ -3,7 +3,10 @@ namespace CarLotSimulator
 {
 	public class Car
 	{
-		
+		public Car()
+		{
+			Car.numberOfCars++;
+		}
 
 			public string Make { get; set; }
 			public string Model { get; set; }
@@ -22,8 +25,8 @@ namespace CarLotSimulator
 			Console.WriteLine($"{honkInput}!!!!!!!");
             }
 
+		public static int numberOfCars { get; set; }
 
-	
-	}
+    }
 }
 
